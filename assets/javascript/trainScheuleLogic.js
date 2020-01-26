@@ -41,11 +41,12 @@ $("#submit").on("click", function(event) {
     $("<td>").text(trainName),
     $("<td>").text(destination),
     $("<td>").text(firstTime),
+    $("<td>").text(frequency),
     $("<td>").text(frequency)
   );
 
   // Append the new row to the table
-  $("#trainTable").append(newRow);
+  $("#trainTable > tbody").append(newRow);
 
   $("#trainName").val("");
   $("#destination").val("");
